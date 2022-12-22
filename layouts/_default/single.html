@@ -35,10 +35,6 @@
             <li>
               By <a href={{ "about" | absURL }}>{{ $.Site.Params.author }}</a>
             </li>
-            <li>
-              <i class="fa fa-clock-o"></i>
-              {{ .PublishDate.Format "January 2, 2006" }} - {{ .Params.readTime }} read
-            </li>
           </ul>
           <div class="feature-image">
             <img src="{{ .Params.featureImage  | absURL }}" alt="banner">
@@ -55,8 +51,6 @@
               <a href="{{.RelPermalink}}" class="title">
                 {{ .Title }}
               </a>
-              <i class="fa fa-clock-o"></i>
-              {{ .PublishDate.Format "January 2, 2006" }} - {{ .Params.readTime }}
             </li>
             {{ end }}
             {{ with .Site.RegularPages.Next . }}
@@ -64,8 +58,6 @@
               <a href="{{.RelPermalink}}" class="title">
                 {{ .Title }}
               </a>
-              <i class="fa fa-clock-o"></i>
-              {{ .PublishDate.Format "January 2, 2006" }} - {{ .Params.readTime }}
             </li>
             {{ end }}
           </ul>

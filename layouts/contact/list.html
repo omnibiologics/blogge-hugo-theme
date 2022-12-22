@@ -8,10 +8,13 @@
           <h2>{{ .Title }}</h2>
           <ul>
             <li><i class="fa fa-map-marker" aria-hidden="true"></i>
-              <p>Address: {{ .Site.Params.authorAddress }}</p>
+              <p>{{ .Site.Params.authorAddress }}</p>
             </li>
             <li><i class="fa fa-phone" aria-hidden="true"></i>
-              <a href="tel:+33-257634 534">Phone:{{ .Site.Params.authorPhone }}</a>
+              <a href="tel:+1(619)767-8406">{{ .Site.Params.authorPhone }}</a>
+            </li>
+            <li><i class="fa fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:contact@omnibiologics.com">{{ .Site.Params.authorEmail }}</a>
             </li>
           </ul>
         </div>
@@ -21,7 +24,7 @@
       <div class="col-lg-6">
         <div class="contact-form">
           <h2>Contact Form</h2>
-          <form class="row" id="contact-form" method="POST" action="https://fabform.io/f/{{ .Site.Params.fabformURL }}">
+          <form class="row" id="contact-form" method="POST" action="https://formspree.io/f/{{ .Site.Params.fabformURL }}">
             <div class="col-md-6">
               <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
             </div>
@@ -45,9 +48,6 @@
               <p id="contact-form-status"></p>
             </div>
           </form>
-          <p class="contact-form-generator">
-            <strong>** </strong> <a href="https://fabform.io/" target="_blank">Static website forms</a>
-          </p>
         </div>
       </div>
       <div class="col-lg-6">
