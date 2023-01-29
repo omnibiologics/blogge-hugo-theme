@@ -6,13 +6,14 @@
       <div class="col-12">
         <article class="featured-post">
           <div class="featured-post-content">
-            <div class="featured-post-author">
-              <p>By <a href={{ "about" | absURL }}>{{ $.Site.Params.author }}</a></p>
-            </div>
             <a href="{{ .Permalink }}" class="featured-post-title">
               {{ .Title }}
             </a>
+            <div class="featured-post-author">
+              <p>By <a href={{ "about" | absURL }}>{{ $.Site.Params.author }}</a></p>
+            </div>
             <ul class="featured-post-meta">
+              <p>The easiest, most affordable way for your lab to explore your bio samples.</p>
             </ul>
           </div>
           <div class="featured-post-thumb">
